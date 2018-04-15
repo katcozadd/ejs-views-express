@@ -22,7 +22,7 @@ let pizza = [
     image: '/static/img/sausage.jpg',
   },
   {
-    flavor: 'Ham & mushroom',
+    flavor: 'Ham & Mushroom',
     flavorKey: 'ham-mushroom',
     location: 'Italy',
     locationKey: 'italy',
