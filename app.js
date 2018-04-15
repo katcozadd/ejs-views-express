@@ -6,7 +6,6 @@ const logger = require('morgan');
 const app = express();
 
 /* set the view engine */
-// app.use(express.static('public'));
 app.set('views', './views');
 app.set('view engine', 'ejs');
 
@@ -21,9 +20,14 @@ app.get('/', (request, response) => {
 });
 
 
-app.get("/allpizzas", function(request,response){
+app.get("/allpizza", function(request, response){
 	response.render( 'index', {pizza: pizza} )
 });
+
+app.get("/allpizza/:id", function(request, response){
+	let id = request.params.id;
+	response.render( 'individual/pizza-single', pizza[id-1])
+})
 
 /* error handler */
 app.get('*', function(request, response) {

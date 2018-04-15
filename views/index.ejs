@@ -9,10 +9,11 @@
 <head>
 	<meta charset="UTF-8">
 	<title>Ada's Menu</title>
+	<link rel="stylesheet" href="style.css">
 </head>
 <body>
 	<% for (let i = 0; i < pizza.length; i++) { %>
-	  <h1><a href="/allpizza/<%= i+1 %>"><%= pizza[i].flavor %></a></h1>
+	  <h1 id="allPizzaHeader"><a href="/allpizza/<%= i+1 %>"><%= pizza[i].flavor %></a></h1>
 	<% } %>
 </body>
 </html>
