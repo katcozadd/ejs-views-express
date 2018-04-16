@@ -9,11 +9,23 @@
 <head>
 	<meta charset="UTF-8">
 	<title>Ada's Menu</title>
+	<link href="https://fonts.googleapis.com/css?family=News+Cycle" rel="stylesheet">
 	<link rel="stylesheet" href="style.css">
 </head>
 <body>
+	<header>
+		<nav>
+			<ul>
+				<li><a href="/home">Home</a></li>
+				<li><a href="/allpizza">Menu</a></li>
+				<li><a href="#">Contact</a></li>
+			</ul>
+		</nav>
+	</header>
+	<h1 id="pizzaIntro">Looking for the pie of your dreams? Look no further, we have a selection of dreamy pies for you!</h1>
+	<img src="https://images.unsplash.com/photo-1511516145543-d29e3a975007?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=19c165a9a2e02e390c49c7a3dce0b778&auto=format&fit=crop&w=634&q=80" id="allPizzaImage" alt="">
 	<% for (let i = 0; i < pizza.length; i++) { %>
-	  <h1 id="allPizzaHeader"><a href="/allpizza/<%= i+1 %>"><%= pizza[i].flavor %></a></h1>
+	  <h3 id="allPizzaHeader"><a href="/allpizza/<%= i+1 %>"><%= pizza[i].flavor %></a></h1>
 	<% } %>
 </body>
 </html>

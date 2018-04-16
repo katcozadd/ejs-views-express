@@ -15,8 +15,8 @@ app.use(logger('dev'));
 app.use('/static', express.static(path.join(__dirname, 'public')));
 
 
-app.get('/', (request, response) => {
-    response.sendFile('index.html');
+app.get('/home', (request, response) => {
+    response.sendFile('index.html', {root: 'public'});
 });
 
 

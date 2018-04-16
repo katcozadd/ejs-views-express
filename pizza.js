@@ -26,20 +26,20 @@ let pizza = [
     flavorKey: 'ham-mushroom',
     location: 'Italy',
     locationKey: 'italy',
-    image: '/static/img/ham-mushroom.jpg',
+    image: 'https://i.pinimg.com/564x/2b/8a/f9/2b8af91c0565e52275f98039ecca0617.jpg',
   },
   {
-    flavor: 'Deep dish',
+    flavor: 'Deep Dish',
     flavorKey: 'deep-dish',
     location: 'Chicago',
     locationKey: 'chicago',
-    image: '/static/img/deep-dish.jpg',
+    image: 'https://i.pinimg.com/564x/7d/93/d7/7d93d70fefad76b6a9ba486dc7fca002.jpg',
   },
   {
     flavor: 'Pineapple',
     location: 'Hawaii',
     locationKey: 'hawaii',
-    image: '/static/img/pineapple.jpg',
+    image: 'https://sallysbakingaddiction.com/wp-content/uploads/2014/08/It-doesnt-get-much-better-than-Homemade-Hawaiian-Pizza.-Tropical-paradise-for-dinner-2.jpg',
   }
 ];
 
