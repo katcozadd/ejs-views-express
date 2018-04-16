@@ -15,16 +15,16 @@ app.use(logger('dev'));
 app.use('/static', express.static(path.join(__dirname, 'public')));
 
 
-app.get('/home', (request, response) => {
+app.get('/', (request, response) => {
     response.sendFile('index.html', {root: 'public'});
 });
 
 
-app.get("/allpizza", function(request, response){
+app.get("/allpizza", function(request, response) {
 	response.render( 'index', {pizza: pizza} )
 });
 
-app.get("/allpizza/:id", function(request, response){
+app.get("/allpizza/:id", function(request, response) {
 	let id = request.params.id;
 	response.render( 'individual/pizza-single', pizza[id-1])
 })
