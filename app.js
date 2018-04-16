@@ -1,5 +1,5 @@
 /* dependencies & app setup */
-const pizza = require('./pizza.js');
+const pizza = require('./db/pizza.js');
 const express = require('express');
 const path = require('path');
 const logger = require('morgan');
