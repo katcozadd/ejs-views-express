@@ -20,12 +20,12 @@ app.get('/', (request, response) => {
 });
 
 //Menu Page with all of the pizzas - index.ejs
-app.get("/allpizza", function(request, response) {
+app.get("/pizza", function(request, response) {
 	response.render( 'index', {pizza: pizza} )
 });
 
 //Individual pages with specific pizzas in different pages by id - pizza-single.ejs
-app.get("/allpizza/:id", function(request, response) {
+app.get("/pizza/:id", function(request, response) {
 	let id = request.params.id;
 	response.render( 'single/pizza-single', pizza[id-1])
 })
