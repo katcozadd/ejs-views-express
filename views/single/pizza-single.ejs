@@ -7,8 +7,10 @@
 	<link href="https://fonts.googleapis.com/css?family=News+Cycle" rel="stylesheet">
 	<link rel="stylesheet" href="../style.css">
 </head>
+<!-- added a partials navagation that links to index.ejs and all of the individual pizzas -->
 <% include ../partials/nav.ejs %>
 <body>
+	<!-- taking the flavor, location and image from the pizza.js for each -->
 	<h1 id="singlePizzaHeader"> <%= flavor %> Pizza</h1>
 	<h2>Orginally from <%= location %>, made perfect at Ada's...</h2>
 	<img src= <%= image %> >

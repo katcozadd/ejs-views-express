@@ -16,6 +16,7 @@
 <body>
 	<h1 id="pizzaIntro">Looking for the pie of your dreams? Look no further, we have a selection of dreamy pies for you!</h1>
 	<img src="https://images.unsplash.com/photo-1511516145543-d29e3a975007?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=19c165a9a2e02e390c49c7a3dce0b778&auto=format&fit=crop&w=634&q=80" id="allPizzaImage" alt="">
+<!-- 	Using a loop to print out the flavors of all of the pizzas and then linking them to the /allpizza route -->
 	<% for (let i = 0; i < pizza.length; i++) { %>
 	  <h3 id="allPizzaHeader"><a href="/allpizza/<%= i+1 %>"><%= pizza[i].flavor %></a></h1>
 	<% } %>
